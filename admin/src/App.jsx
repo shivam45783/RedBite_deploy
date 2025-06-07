@@ -9,7 +9,7 @@ import { Toaster } from "react-hot-toast";
 import { ToastContainer } from "react-toastify";
 import Update from "./pages/Update/Update";
 const App = () => {
-  const url = "http://localhost:4000";
+  const url = "https://redbite-deploy-backend.onrender.com";
   return (
     <div className="app">
       <Toaster />
