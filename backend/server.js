@@ -15,12 +15,7 @@ const app = express();
 const port = 4000 || process.env.PORT;
 
 // middleware
-app.use(
-  cors({
-    origin: "https://redbite-deploy-frontend.onrender.com",
-    credentials: true,
-  })
-);
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.get("/", (req, res) => {
