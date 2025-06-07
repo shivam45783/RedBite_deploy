@@ -1,5 +1,5 @@
 import basket_icon from "./basket_icon.png";
-import logo from "./Redbite_black_logo.png";
+import logo from "./RedBite_black_logo.png";
 import logo_black from "./RedBiteblack.png";
 import logo_white from "./RedBitewhite.png";
 import logo_black_no_bg from "./RedBite_black_no_bg.png";
