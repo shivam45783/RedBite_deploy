@@ -1,0 +1,16 @@
+.explore-menu-list:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+.menu-item:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    transform: translateY(-10px);
+    transition: transform 0.1s ease-in-out;
+}
+@media (max-width:1024px) {
+    .explore-menu-text {
+        max-width: 100%;
+        font-size: 14px;
+    }
+}
