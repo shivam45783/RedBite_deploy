@@ -17,7 +17,6 @@ const AuthEmail = () => {
       subject: "Account Verification",
     });
     if (response.data.success) {
-      setShowOTP(true);
       toast.success(response.data.message);
       navigate("/forgotpassword/" + email);
     } else {
