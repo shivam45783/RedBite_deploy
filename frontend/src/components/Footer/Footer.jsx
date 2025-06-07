@@ -71,7 +71,7 @@ const Footer = () => {
         <div className="footer-content-right">
           <h2>GET IN TOUCH</h2>
           <ul>
-            <li>+1-212-555-5555</li>
+            <li>+1-345-535-7828</li>
             <li
               onClick={() =>
                 (window.location.href = "mailto:service.redbite@gmail.com")
