@@ -21,7 +21,7 @@ const Footer = () => {
             Get your favourite food delivered to your doorstep with ease and
             speed. Enjoy Lipsmackin' food and exceptional service.
           </p>
-          <p className="font-semibold ">"Crave It. RedBite It."</p>
+          <p className="font-semibold ">"Crave It, RedBite It!"</p>
           <div className="footer-social-icons ">
             <a
               className="linkedin flex w-full justify-center items-center hover:scale-[1.05]"

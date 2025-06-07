@@ -5,7 +5,7 @@ const Loading = ({ show }) => {
   return (
     <div className={`spinner-box ${show ? "" : "hide-spinner"}`}>
       <img src={assets.logo_white_no_bg} alt="" />
-      <p>Crave It, RedBite It</p>
+      <p>Crave It, RedBite It!</p>
       <div className={`spinner `}></div>
     </div>
   );
