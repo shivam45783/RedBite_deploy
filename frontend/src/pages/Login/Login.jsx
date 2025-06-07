@@ -180,7 +180,7 @@ const Login = () => {
       toast.error(response.data.message);
     }
   };
-  
+
   return (
     <>
       <div className="box">
@@ -226,7 +226,14 @@ const Login = () => {
                 />
               </div>
               <button type="submit">Sign Up</button>
-              <a href="/home">Skip</a>
+              <a
+                onClick={(e) => {
+                  e.preventDefault();
+                  navigate("/home");
+                }}
+              >
+                Skip
+              </a>
             </form>
           </div>
           <div className="form-container sign-in">
@@ -266,7 +273,14 @@ const Login = () => {
                 Forgot Password
               </a>
               <button type="submit">Sign In</button>
-              <a href="/home">Skip</a>
+              <a
+                onClick={(e) => {
+                  e.preventDefault();
+                  navigate("/home");
+                }}
+              >
+                Skip
+              </a>
             </form>
           </div>
           <div className="toggle-container">
@@ -370,7 +384,14 @@ const Login = () => {
                 </a>
               </span>
 
-              <a href="/home">Skip</a>
+              <a
+                onClick={(e) => {
+                  e.preventDefault();
+                  navigate("/home");
+                }}
+              >
+                Skip
+              </a>
             </form>
           </div>
           <div
@@ -423,7 +444,14 @@ const Login = () => {
                 </a>
               </span>
 
-              <a href="/home">Skip</a>
+              <a
+                onClick={(e) => {
+                  e.preventDefault();
+                  navigate("/home");
+                }}
+              >
+                Skip
+              </a>
               <a
                 href=""
                 onClick={(e) => {
