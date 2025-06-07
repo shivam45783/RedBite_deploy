@@ -58,7 +58,9 @@ const Login = () => {
     const response = await axios.post(newUrl, data);
     if (response.data.success) {
       setToken(response.data.token);
-      localStorage.setItem("token", response.data.token);
+      if (newUrl == url + "/api/user/login") {
+        localStorage.setItem("token", response.data.token);
+      }
       setDataFetching(true);
       getUserDetails(response.data.token);
       if (newUrl === url + "/api/user/register") {
@@ -144,7 +146,9 @@ const Login = () => {
     const response = await axios.post(newUrl, data);
     if (response.data.success) {
       setToken(response.data.token);
-      localStorage.setItem("token", response.data.token);
+      if (newUrl == url + "/api/user/login") {
+        localStorage.setItem("token", response.data.token);
+      }
       setDataFetching(true);
       getUserDetails(response.data.token);
       if (newUrl === url + "/api/user/register") {

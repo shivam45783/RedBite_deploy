@@ -22,16 +22,16 @@ const OTP = () => {
         otp,
       });
       if (response.data.success) {
+        localStorage.setItem("token", token);
         toast.success(response.data.message);
-        
+
         navigate("/home");
-      } else  {
-        toast.error("Something went wrong")
+      } else {
+        toast.error("Something went wrong");
       }
     } catch (error) {
-     
       if (error.response && error.response.status === 400) {
-        toast.error(error.response.data.message); // 
+        toast.error(error.response.data.message); //
         setOTP("");
       } else {
         toast.error("Something went wrong");
