@@ -76,11 +76,11 @@ const Navbar = () => {
           </a>
         </ul>
         <div className="navbar-right flex items-center gap-[40px]  ">
-          <img
+          {/* <img
             src={assets.search_icon}
             alt=""
             className="w-[18px] cursor-pointer"
-          />
+          /> */}
           <div className="relative navbar-search-icon ">
             <img
               src={assets.basket_icon}
