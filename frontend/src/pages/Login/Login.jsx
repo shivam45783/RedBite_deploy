@@ -180,7 +180,12 @@ const Login = () => {
       toast.error(response.data.message);
     }
   };
-
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    if (token) {
+      navigate("/home");
+    }
+  }, []);
   return (
     <>
       <div className="box">
