@@ -72,30 +72,30 @@ const Update = ({ url }) => {
   };
   const onSubmitHandler = async (e) => {
     e.preventDefault();
-    if(data.price < 0) {
-          toast.error("Price must be greater than 0");
-          return
-        }
+    if (data.price < 0) {
+      toast.error("Price must be greater than 0");
+      return;
+    }
     const formData = new FormData();
     if (data.name === "") {
-          toast.error("Enter Product Name");
-          return;
-        } else if (data.description === "") {
-          toast.error("Enter Product Description");
-          return;
-        } else if (data.price === "") {
-          toast.error("Enter Product Price");
-          return;
-        } else if (image === false) {
-          toast.error("Upload Product Image");
-          return;
-        } else if (data.category === "") {
-          toast.error("Select Product Category");
-          return;
-        } else if (data.price < 0) {
-          toast.error("Price must be greater than 0");
-          return;
-        } 
+      toast.error("Enter Product Name");
+      return;
+    } else if (data.description === "") {
+      toast.error("Enter Product Description");
+      return;
+    } else if (data.price === "") {
+      toast.error("Enter Product Price");
+      return;
+    } else if (image === false) {
+      toast.error("Upload Product Image");
+      return;
+    } else if (data.category === "") {
+      toast.error("Select Product Category");
+      return;
+    } else if (data.price < 0) {
+      toast.error("Price must be greater than 0");
+      return;
+    }
     formData.append("image", file);
     formData.append("name", data.name);
     formData.append("description", data.description);
@@ -122,9 +122,6 @@ const Update = ({ url }) => {
 
     // console.log(id);
   }, []);
-  useEffect(() => {
-    console.log(data);
-  }, [data]);
   return (
     <div className="add w-[70%] !ml-[max(25px,5vw)] !mt-[50px] text-gray-600 text-[16px]  p-5 rounded-[20px]">
       <form action="" className="col gap-5 " onSubmit={onSubmitHandler}>

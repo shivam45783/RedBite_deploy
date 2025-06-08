@@ -11,10 +11,6 @@ const OTP = () => {
   const [otp, setOTP] = useState("");
   const { url } = useContext(StoreContext);
   const navigate = useNavigate();
-  useEffect(() => {
-    console.log(otp);
-  }, [otp]);
-
   const verifyUser = async () => {
     try {
       const response = await axios.post(`${url}/api/mail/auth`, {
