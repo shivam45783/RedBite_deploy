@@ -42,7 +42,7 @@ const Cart = () => {
               <div>
                 <div className="cart-items-title cart-items-item !mt-[10px] !mb-[10px] text-black font-semibold">
                   <img
-                    src={`${url}/images/${item.image}`}
+                    src={`${item.url}`}
                     alt=""
                     className="w-[50px]"
                     onClick={() => navigateFood(item._id)}
